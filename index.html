@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gast&oacute;n P&eacute;rez</title>
+	<meta name="description" content="¡Hola! Me llamo Gast&oacute;n, soy Desarrollador Web y soy de Buenos Aires, Argentina.">
+	<meta name="keywords" content="gaston perez, desarrollador web, web developer, dev, developer, resume, cv">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Gaston Perez">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.min.css"/>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
 	<header>
 		<div class="stars"></div>
 		<div class="twinkling"></div>
-		
+
+		<a href="index-en.html" class="btn-language">EN</a>
+
 		<div class="name-container d-flex flex-column align-items-center justify-content-center">
 			<h1 class="name text-nowrap text-uppercase animate__animated animate__fadeInDown delay-500ms">Gast&oacute;n P&eacute;rez</h1>
 			<div class="animate__animated animate__fadeInLeftBig delay-1500ms"><h2 id="typed-job" class="job"></h2></div>
@@ -23,7 +28,7 @@
 				<li>
 					<div class="animate__animated animate__fadeInDown delay-9500ms">
 						<a href="https://www.linkedin.com/in/gaston-ezequiel-perez/" target="_blank">
-							<img src="img/linkedin.svg" alt="linkedin">
+							<img src="img/contact/linkedin.svg" alt="linkedin">
 						</a>
 					</div>
 				</li>
@@ -37,7 +42,7 @@
 				<li>
 					<div class="animate__animated animate__fadeInDown delay-10500ms">
 						<a href="mailto:gastonperez97@gmail.com">
-							<img src="img/skills/email.svg" alt="email">
+							<img src="img/contact/email.svg" alt="email">
 						</a>
 					</div>
 				</li>
@@ -316,7 +321,7 @@
 							<div class="col-12 col-md-6">
 								<div class="p-4 bg-tertiary rounded-3 btn-contact">
 									<a href="https://www.linkedin.com/in/gaston-ezequiel-perez/" target="_blank" class="d-flex justify-content-start align-items-center">
-										<img src="img/linkedin.svg" alt="linkedin" class="contact-icon ms-sm-3 ms-md-0 ms-xl-3 me-3 me-sm-5 me-md-3 me-xl-5">
+										<img src="img/contact/linkedin.svg" alt="linkedin" class="contact-icon ms-sm-3 ms-md-0 ms-xl-3 me-3 me-sm-5 me-md-3 me-xl-5">
 										<p class="m-0 fs-0 fs-md-5">/gaston-ezequiel-perez</p>
 									</a>
 								</div>
@@ -325,7 +330,7 @@
 							<div class="col-12 col-md-6">
 								<div class="p-4 bg-tertiary rounded-3 btn-contact">
 									<a href="mailto:gastonperez97@gmail.com" class="d-flex justify-content-start align-items-center">
-										<img src="img/skills/email.svg" alt="email" class="contact-icon ms-sm-3 ms-md-0 ms-xl-3 me-3 me-sm-5 me-md-3 me-xl-5">
+										<img src="img/contact/email.svg" alt="email" class="contact-icon ms-sm-3 ms-md-0 ms-xl-3 me-3 me-sm-5 me-md-3 me-xl-5">
 										<p class="m-0 fs-0 fs-md-5 text-wrap">gastonperez97@gmail.com</p>
 									</a>
 								</div>
@@ -335,7 +340,7 @@
 								<div class="p-4 bg-tertiary rounded-3 btn-contact">
 									<a href="#" target="_blank" class="d-flex justify-content-start align-items-center">
 										<!-- Icono diseñado por https://www.freepik.com from www.flaticon.es -->
-										<img src="img/cv.svg" alt="curriculum vitae" class="contact-icon ms-sm-3 ms-md-0 ms-xl-3 me-3 me-sm-5 me-md-3 me-xl-5">
+										<img src="img/contact/cv.svg" alt="curriculum vitae" class="contact-icon ms-sm-3 ms-md-0 ms-xl-3 me-3 me-sm-5 me-md-3 me-xl-5">
 										<p class="m-0 fs-0 fs-md-5">Curriculum Vitae</p>
 									</a>
 								</div>
@@ -357,30 +362,8 @@
 	</main>
 	
 	<script src="js/bootstrap.bundle.min.js"></script>
-
-	<script>
-		document.querySelector(".btn-seeMore-box").addEventListener("click", () => {
-			document.querySelector("#about").scrollIntoView();
-		})
-	</script>
-	
+	<script src="js/btn-seeMore.js"></script>
 	<script src="js/typed.js"></script>
-	<script>
-		var options = {
-			strings: ['&lt;b&gt;Desarrollador Web&lt;/b&gt;'],
-			startDelay: 3500,
-			typeSpeed: 120,
-			onComplete: (self) => {
-				window.setTimeout(() => {
-					document.querySelector(".typed-cursor").style.display = "none";
-					let job = document.querySelector("#typed-job");
-					job.innerHTML = "Desarrollador Web";
-					job.classList.add("job-after-typing", "animate__animated", "animate__bounceIn");
-				}, 800);
-			}
-		};
-
-		var typed = new Typed('#typed-job', options);
-	</script>
+	<script src="js/typed-job.js"></script>
 </body>
 </html>
