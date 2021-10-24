@@ -44,6 +44,13 @@ ul {
 	list-style: none;
 }
 
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+
 .typed-cursor {
 	font-size: calc(0.8em + 1vw);
 	font-weight: 200;
@@ -207,6 +214,7 @@ ul {
 }
 
 .header-links li img {
+	padding: 1px 0;
 	width: 30px;
 }
 
@@ -309,6 +317,12 @@ ul {
 
 .btn-contact:hover {
 	transform: scale(1.05);
+}
+
+.btn-disabled, .btn-disabled * {
+	cursor: not-allowed;
+	transform: unset !important;
+	opacity: 0.65;
 }
 
 .contact-icon {
