@@ -105,6 +105,10 @@ img {
 	text-align: center;
 }
 
+.job-container {
+	height: 38px;
+}
+
 .job {
 	display: inline-block;
 	font-weight: 200;
