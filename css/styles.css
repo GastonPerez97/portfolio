@@ -280,7 +280,6 @@ ul {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: center;
 }
 
@@ -314,6 +313,13 @@ ul {
 
 .contact-icon {
 	width: 40px;
+}
+
+.team-work-text {
+	font-weight: 200;
+	font-size: 0.55em;
+	background-color: inherit;
+	margin-left: 14px;
 }
 
 
@@ -399,5 +405,10 @@ ul {
 @media screen and (max-width: 350px) {
 	.name {
 		font-size: 6vw;
+	}
+
+	.team-work-text {
+		display: block;
+		margin: 10px 0 0 0;
 	}
 }
