@@ -323,10 +323,9 @@ img {
 	transform: scale(1.05);
 }
 
-.btn-disabled, .btn-disabled * {
+.btn-disabled {
 	cursor: not-allowed;
-	transform: unset !important;
-	opacity: 0.65;
+	opacity: 0.64;
 }
 
 .contact-icon {
