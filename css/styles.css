@@ -8,8 +8,11 @@
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 	scroll-behavior: smooth;
-	background-color: #000;
 	color: #fff;
+}
+
+html {
+	background-color: #000;
 }
 
 header {
@@ -17,6 +20,7 @@ header {
 }
 
 main {
+	background-color: #000;
 	position: relative;
 	z-index: 10;
 }
@@ -277,6 +281,12 @@ img {
 
 .project-img {
 	border-radius: 1em;
+	transition: 0.2s;
+}
+
+.project-img:hover {
+	transform: scale(1.1);
+	cursor: zoom-in;
 }
 
 .project-btn i {
@@ -380,6 +390,11 @@ img {
 	.btn-language {
 		top: 5vh;
 		right: 5vw;
+	}
+
+	.project-img:hover {
+		transform: none;
+		cursor: auto;
 	}
 }
 
