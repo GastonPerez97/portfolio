@@ -8,11 +8,8 @@
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 	scroll-behavior: smooth;
-	color: #fff;
-}
-
-html {
 	background-color: #000;
+	color: #fff;
 }
 
 header {
@@ -20,7 +17,6 @@ header {
 }
 
 main {
-	background-color: #000;
 	position: relative;
 	z-index: 10;
 }
