@@ -2,7 +2,7 @@
 
 [https://gastonperez.ar](https://gastonperez.ar)
 
-Welcome to my first web development portfolio, created with HTML 5, CSS 3 and Javascript.
+Welcome to my first web development portfolio, created with HTML 5, CSS 3 and JavaScript.
 
 ## 🛠️ Framework and libraries used:
 - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
