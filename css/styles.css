@@ -120,30 +120,29 @@ img {
 	font-weight: 700;
 }
 
-.delay-500ms {
-	animation-delay: 0.5s;
+.delay-300ms {
+	animation-delay: 0.3s;
 }
 
-.delay-1500ms {
-	animation-delay: 1.5s;
+.delay-800ms {
+	animation-delay: 0.8s;
 }
 
-.delay-9500ms {
-	animation-delay: 9.5s;
+.delay-6s {
+	animation-delay: 6s;
 }
 
-.delay-10s {
-	animation-delay: 10s;
+.delay-6500ms {
+	animation-delay: 6.5s;
 }
 
-.delay-10500ms {
-	animation-delay: 10.5s;
+.delay-7s {
+	animation-delay: 7s;
 }
 
-.delay-11s {
-	animation-delay: 11s;
+.delay-7500ms {
+	animation-delay: 7.5s;
 }
-
 
 .btn-seeMore {
 	color: #fff;
@@ -428,6 +427,10 @@ img {
 @media screen and (max-width: 350px) {
 	.name {
 		font-size: 6vw;
+	}
+
+	.job {
+		font-size: calc(0.8em + 1vw);
 	}
 
 	.team-work-text {

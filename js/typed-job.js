@@ -1,14 +1,14 @@
 var options = {
-	strings: ['&lt;b&gt;Desarrollador Web&lt;/b&gt;'],
-	startDelay: 3500,
-	typeSpeed: 120,
+	strings: ['&lt;strong&gt;Desarrollador Web&lt;/strong&gt;'],
+	startDelay: 2000,
+	typeSpeed: 60,
 	onComplete: (self) => {
 		window.setTimeout(() => {
 			document.querySelector(".typed-cursor").style.display = "none";
 			let job = document.querySelector("#typed-job");
 			job.innerHTML = "Desarrollador Web";
 			job.classList.add("job-after-typing", "animate__animated", "animate__bounceIn");
-		}, 800);
+		}, 600);
 	}
 };
 
