@@ -298,8 +298,18 @@ img {
 	transition: 0.15s;
 }
 
-.project-btn:hover p, .project-btn:hover i {
+.project-btn:not(.project-btn-disabled):hover p,
+.project-btn:not(.project-btn-disabled):hover i {
 	color: #000;
+}
+
+.project-btn-disabled {
+	cursor: not-allowed;
+	opacity: 0.50;
+}
+
+.project-btn-disabled:hover {
+	background-color: transparent;
 }
 
 .tech-used {
